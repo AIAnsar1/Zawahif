@@ -1,0 +1,9 @@
+[package]
+name = "zawahif"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+faker = "0.0.4"
+regex = "1.11.1"
+uuid = "1.11.0"
