@@ -4,14 +4,14 @@
 ## Update
 
 ```rust
- run cargi update
+ run cargo update
 ```
 
 
 ## Run
 
 ```rust
- run cargi build
+ run cargo build
 ```
 
 

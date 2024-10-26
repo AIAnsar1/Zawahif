@@ -3,7 +3,7 @@
 
 const MAX_UINT: usize = usize::MAX;
 const MIN_UINT: usize = 0;
-const MAX_INT: isize = (MAX_UINT >> 1);
+const MAX_INT: isize = (MAX_UINT >> 1) as isize;
 const MIN_INT: isize = -MAX_INT - 1;
 
 

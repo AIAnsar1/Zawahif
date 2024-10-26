@@ -1,10 +1,10 @@
+use faker::Faker;
 use rand::Rng;
 use rand::thread_rng;
-
-
+use rand::rngs::ThreadRng;
 
 pub struct Reptilia {
-    FakerGun: rand::rngs::ThreadRng,
+    pub(crate) FakerGun: ThreadRng,
 }
 
 

@@ -1,11 +1,21 @@
+use rand::{thread_rng, Rng};
+pub use crate::config::conf::*;
 pub use super::repts::{TReptiliaI, Reptilia};
 
 
 
+impl Reptilia {
+    fn new() -> Self {
+        Reptilia {
+            FakerGun: thread_rng(),
+        }
+    }
+}
+
 
 impl TReptiliaI for Reptilia {
-    fn reptilia_boolean(&self) -> bool {
-        todo!()
+    fn reptilia_boolean(&mut self) -> bool {
+        self.FakerGun.gen()
     }
 
     fn reptilia_int(&self) -> i32 {
